@@ -5,7 +5,6 @@ node_modules/
 dist/
 
 # Ignore environment variable file
-.env
 
 # Ignore any log files
 *.log

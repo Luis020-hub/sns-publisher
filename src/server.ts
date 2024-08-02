@@ -13,6 +13,8 @@ app.post("/nfe", async (request, response) => {
   try {
     const { url } = requestBodySchema.parse(request.body);
     const sns = new SNS({
+      accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+      secretAccessKey: process.env.AWS_ACCESS_SECRET,
       region: "us-east-1",
     });
 
